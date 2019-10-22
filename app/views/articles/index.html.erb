@@ -1,0 +1,6 @@
+<h1>Faki Wiki
+
+<% @articles.each do |element| %>
+  <p><%= link_to element.title, article_path(element.id) %><p>
+  <p><%= element.content %></p>
+<% end %>

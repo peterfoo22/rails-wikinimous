@@ -1,0 +1,7 @@
+<h1>Title: <%= @articles.title %></h1>
+<h2>Content: <%= @articles.content %></h2>
+
+<%= link_to "Back to Home Page", articles_path %>
+<%= link_to "Edit this Article", edit_article_path %>
+<%= link_to "Delete this Article", article_path(@articles.id), method: :delete %>
+
